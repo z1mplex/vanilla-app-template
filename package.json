@@ -19,6 +19,7 @@
   "author": "z1mplex <vip.pon123456@gmail.com> (https://github.com/z1mplex)",
   "license": "ISC",
   "dependencies": {
+    "flatpickr": "^4.6.13",
     "simplelightbox": "^2.14.3",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
