@@ -3,63 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Асинхронний JavaScript</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DbKFo5A1.css">
+    <title>Лабораторна робота</title>
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-Ct3qjXD8.css">
 </head>
 <body>
+    <h1>Лабораторна робота</h1>
 
-    <div class="container">
-        <h1>Асинхронні операції в JavaScript</h1>
+    <h2>Завдання 1: Основи async/await</h2>
+    <button onclick="getNumber()">Отримати число</button>
 
-        <!-- Кнопки для setTimeout -->
-        <div class="button-group">
-            <button id="start-timeout">Запустити setTimeout</button>
-            <button id="cancel-timeout">Скасувати setTimeout</button>
-        </div>
+    <h2>Завдання 2: Завантаження користувачів</h2>
+    <button onclick="fetchUsers()">Завантажити користувачів</button>
+    <ul id="usersContainer"></ul>
 
-        <!-- Кнопки для setInterval -->
-        <div class="button-group">
-            <button id="start-interval">Запустити setInterval</button>
-            <button id="stop-interval">Зупинити setInterval</button>
-        </div>
+    <h2>Завдання 3: Пагінація постів</h2>
+    <ul id="postsContainer"></ul>
+    <button id="loadMore">Завантажити ще</button>
+    <button id="reloadButton">Оновити</button>
 
-        <!-- Кнопка для Fetch API -->
-        <div class="button-group">
-            <button id="fetch-data">Отримати дані</button>
-        </div>
+    <h2>Завдання 4: Коментарі до поста</h2>
+    <button onclick="fetchComments(1)">Завантажити коментарі</button>
+    <ul id="commentsContainer"></ul>
 
-        <!-- Таймер зворотного відліку -->
-        <div class="timer-container">
-            <input type="text" id="datetime-picker" placeholder="Оберіть дату"/>
-            <button type="button" id="start-timer" disabled>Start</button>
-            <div class="timer">
-                <div class="field">
-                    <span class="value" data-days>00</span>
-                    <span class="label">Days</span>
-                </div>
-                <div class="field">
-                    <span class="value" data-hours>00</span>
-                    <span class="label">Hours</span>
-                </div>
-                <div class="field">
-                    <span class="value" data-minutes>00</span>
-                    <span class="label">Minutes</span>
-                </div>
-                <div class="field">
-                    <span class="value" data-seconds>00</span>
-                    <span class="label">Seconds</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h2>Завдання 5: Завантаження фото</h2>
+    <button id="loadPhotos">Завантажити фото</button>
+    <div id="photosContainer"></div>
 
-        <!-- Місце для відображення повідомлень -->
-        <div id="message-container"></div>
-    </div>
+    <div id="loader" style="display: none;">Завантаження...</div>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/countdown-timer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/task1.js"></script>
+    <script src="js/task2.js"></script>
+    <script src="js/task3.js"></script>
+    <script src="js/task4.js"></script>
+    <script src="js/task5.js"></script>
 </body>
 </html>
